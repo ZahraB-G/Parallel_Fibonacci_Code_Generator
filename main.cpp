@@ -207,6 +207,8 @@ int main()
     //output of my project format.
     for (int i = 0; i < initialVector.size(); i++)
         cout << "Symbol: " << initialVector[i].symbol << ", Frequency: " << initialVector[i].frequency << ", Code: " << initialVector[i].fibcode << endl;
+    delete[] tid;
+    delete[] fibTable;
     return 0;
 
 }
