@@ -57,7 +57,7 @@ int RecursiveFibFunction(int n)
 /*this function fill out the fibonacci table*/
 void FillFibTable(int* fibTable)
 {
-    for (int i = 1; i < 10; i++)
+    for (int i = 1; i < 20; i++)
     {
         fibTable[i] = RecursiveFibFunction(i);
     }
@@ -118,7 +118,7 @@ int main()
 
     //this is first step to get the inputfile and originalcharacters
     static string fileInput; //this variable contains the file's string which is accessible everywhere
-    static int* fibTable = new int[10];
+    static int* fibTable = new int[20];
     static string originalString; //originalstring which is gonna be repeated in file
     string fileName; //name of the file that I have to read
     getline(cin, originalString);
